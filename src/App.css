@@ -1,0 +1,82 @@
+/* App.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align items to the top */
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 1rem; /* Add some padding around the content */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+  }
+  
+  .title-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .game-title {
+    margin-bottom: 0.5rem;
+    font-size: 2rem; /* Adjust as needed */
+  }
+  
+  .game-instructions {
+    font-size: 1.25rem; /* Adjust as needed */
+  }
+  
+  .color-sequence-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .color-sequence-box {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; /* Black text for better visibility */
+    border: 2px solid black; /* Border for better visibility */
+    border-radius: 4px;
+    margin: 0 5px; /* Spacing between colors */
+    background-color: #ccc; /* Light gray background for the color boxes */
+  }
+  
+  .player-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns with fixed width */
+    grid-template-rows: repeat(3, 100px); /* 3 rows with fixed height */
+    gap: 10px; /* Spacing between boxes */
+    justify-content: center; /* Center the grid horizontally */
+    margin-top: 2rem;
+  }
+  
+  .player-grid-box {
+    background-color: #fff; /* White background */
+    border: 2px solid #000; /* Black border */
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer; /* Indicate that the boxes are clickable */
+  }
+  
+  .try-me-button {
+    margin-top: 2rem;
+  }
+  
